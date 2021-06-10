@@ -1,0 +1,19 @@
+@import url("./reset.scss");
+div.navigate {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+p {
+  font-size: 5rem;
+}
+/*# sourceMappingURL=navigate.css.map */

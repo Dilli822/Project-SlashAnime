@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none !important;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0px solid;
+  cursor: pointer;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+main {
+  background-image: url("/images/sasuke vs kinisuki.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=reset.css.map */

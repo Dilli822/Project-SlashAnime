@@ -1,0 +1,79 @@
+
+ @import url('./reset.scss');
+ @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+ //variables
+ $primary-background-color: #000;
+ $primary-color: #ff0000b4;
+ $secondary-color: #fff;
+ $primary-button-color: #91fc05c0;
+   *{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+//   button{
+//     border: 0px solid;
+//   }
+
+  @mixin flexSpaceBetween(){
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    border: 1px solid black;
+    }
+
+    @mixin flexCenter(){
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        border: 1px solid black;
+        }
+        @mixin flexSpaceAround(){
+            display: flex;
+            justify-content: space-around;
+            align-items:  center;
+            border: 1px solid black;
+            }
+
+            @mixin flexSpaceEvenly(){
+                display: flex;
+                justify-content: space-around;
+                align-items:  center;
+                border: 1px solid black;
+                }
+        
+
+    div.top-most-header{
+        width: 100%;
+        position: fixed;
+        @include flexSpaceBetween();
+        background-color: $primary-background-color;
+        color: $secondary-color;
+
+        button.btn-donate{
+            font: 1rem 'Dosis', sans-serif;;
+            margin: 0.5rem 1rem .5rem 0rem;
+            background: $primary-button-color;
+            color:rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 0.5rem;
+            letter-spacing: 0.2ex;
+        }
+        button.btn-donate:hover{
+            background: $secondary-color;
+            color: $primary-background-color;
+        }
+    }
+    div.top-mid-header{
+       padding: 4em 0em;
+    }
+    div.top-lower-header{
+       position: fixed;
+       width: 100%;
+       @include flexSpaceAround();
+    }
+
+
+    p{
+        font-size: 5rem;
+        color: $secondary-color;
+    }
