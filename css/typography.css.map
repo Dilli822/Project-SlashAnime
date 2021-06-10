@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AACA,OAAO,CAAC,2EAAI",
     "sources": [
-        "../../scss/typography.scss"
+        "../scss/typography.scss"
     ],
     "names": [],
     "file": "typography.css"
