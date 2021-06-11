@@ -1,18 +1,86 @@
 
 @import url('./reset.scss');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+// @import url('./variables.scss');
+// @import url('./mixins.scss');
+//variables
+$primary-background-color: #000;
+$primary-color: #ff0000b4;
+$secondary-color: #fff;
+$secondary-background-color: #9b9b9b;
+$bold-font-weight: 900;
+$primary-letter-spacing: 1px;
+$primary-background-color: #000;
+$primary-color: #ff0000b4;
+$secondary-color: #fff;
+$primary-button-color: #91fc05c0;
+@mixin flexCenter(){
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border: 1px solid black;
+  }
 
-@mixin flexSpaceAround(){
-    display: flex;
-    justify-content: space-around;
-    align-items:  center;
-    border: 1px solid black;
+ div.navigate
+ nav ul{
+  position: fixed;
+  width: 100%;
+   @include flexCenter();
+   font-family: Dosis;
+   font-weight: $bold-font-weight;
+   background-color: rgb(0, 0, 0);
+   flex-wrap: wrap-reverse;
+ }
+
+ li {
+  list-style-type: none;
+  transform: skewX(170deg);
+  font-size: 1.4rem;
+  padding: 1.3em;
+  margin-right: 0.2rem;
+  background-color: rgba(216, 216, 216, 0.164);
+  letter-spacing: $primary-letter-spacing;
+ }
+
+ a{
+  text-decoration: none;
+  color:$primary-background-color;
+ color:$secondary-color;
+ border-bottom: 2px solid transparent;
+ transition: border-bottom 0.3s;
+ }
+
+
+ li a:hover{ border-bottom: 1px solid #ff0505; }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em;
+  }
+  
+   li a:hover, .dropdown:hover .dropbtn { color:$secondary-color;}
+  
+   .dropdown-content a:hover { 
+      width: 100%; 
+      background-color: $primary-background-color; color:$secondary-color;
     }
+  
+  .dropdown:hover .dropdown-content { display: block; }
 
-  div.navigate{
-    position: fixed;
-    width: 100%;
-    @include flexSpaceAround();
- }
- p{
-     font-size: 5rem;
- }
+
+  p{
+    font-size: 5rem;
+    color:red;
+   }
+   

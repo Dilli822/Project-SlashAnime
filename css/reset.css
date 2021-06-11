@@ -16,16 +16,8 @@ button {
   cursor: pointer;
 }
 
-a {
+nav ul li a {
   list-style: none;
   text-decoration: none;
-}
-
-main {
-  background-image: url("/images/sasuke vs kinisuki.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 /*# sourceMappingURL=reset.css.map */

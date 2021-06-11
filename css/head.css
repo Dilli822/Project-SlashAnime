@@ -1,7 +1,7 @@
-@import url("./reset.scss");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
-* {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 div.top-most-header {
@@ -37,12 +37,45 @@ div.top-most-header button.btn-donate:hover {
 }
 
 div.top-mid-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
   padding: 4em 0em;
+  background-color: #000;
+  color: #000;
 }
 
-div.top-lower-header {
-  position: fixed;
-  width: 100%;
+div.top-mid-header button.top-query,
+div.top-mid-header button.top-query:hover {
+  background-color: #ff0000;
+  padding: 0.5em;
+  letter-spacing: 1px;
+}
+
+div.top-mid-header section.social-medias a {
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0.1em;
+}
+
+div.top-mid-header span,
+div.top-mid-header .fa {
+  color: #fff;
+  opacity: 0.8;
+}
+
+div.top-mid-header .fa:hover {
+  color: #ff0000;
+  opacity: 1;
+}
+
+div.lower-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +89,6 @@ div.top-lower-header {
 
 p {
   font-size: 5rem;
-  color: #fff;
+  color: red;
 }
 /*# sourceMappingURL=head.css.map */
