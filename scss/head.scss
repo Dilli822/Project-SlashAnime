@@ -1,7 +1,6 @@
 
 //  @import url('./reset.scss');
  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
-//  @import url('./mixins.scss');
 //  @import url('./variables.scss');
     
     // Flex Mixins only
@@ -48,6 +47,7 @@
  $primary-color: #ff0000b4;
  $secondary-color: #fff;
  $primary-button-color: #91fc05c0;
+ $primary-font-family: Dosis;
  @mixin flexSpaceBetween(){
     display: flex;
     justify-content: space-between;
@@ -61,6 +61,8 @@
         @include flexSpaceBetween();
         background-color: $primary-background-color;
         color: $secondary-color;
+        box-shadow: 1px 1px #444444b2;
+     
 
         button.btn-donate{
             font: 1rem 'Dosis', sans-serif;;
@@ -109,9 +111,19 @@
 
 
    div.lower-head{ 
-     @include flexSpaceEvenly();
+     @include flexCenter();
+     font-family: $primary-font-family;
       }
     p{
         font-size: 1rem;
-        color: red;
+        color: #ff0000;
     }
+    p.copyright{
+        font-family: $primary-font-family;
+        text-align: center;
+        font-size: .75rem;
+        color:$secondary-color;
+    }
+
+      
+    
