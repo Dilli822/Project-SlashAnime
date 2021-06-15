@@ -27,13 +27,14 @@
         <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="/slick/slick.css">
         <style type="text/css">
-        body{
+        /* body{
           background: #000;
           color:#fff;
         }
           .slider {
               width: 80%;
-              margin: 200px auto;
+              padding: 1rem;
+              margin: 0 auto;
          
           }
       
@@ -62,7 +63,7 @@
       
           .slick-current {
             opacity: 1;
-          }
+          } */
         </style>
     </head>
      <body>
@@ -71,7 +72,7 @@
         <!-- Top-Most Header Part with logo only Starts-->
         <div class="top-most-header">
             <section class="logo">
-              <a href="template.html"> <img src="/logos/SplashAnime.png" alt="splashAnime-logo"></a>
+              <a href="template.html"> <img src="/logos/SlashAnime.png" alt="slashAnime-logo"></a>
             </section>
             <section class="donate">
                 <button class="btn-donate">Donate</button>
@@ -102,7 +103,11 @@
         
                <!-- Top -Lower Header Part with Search box starts-->
                <div class="lower-head">
-                <section class="logo2">Logo2</section>
+                <section class="logo2">
+                  <figure>
+                    <img src="/logos/Slash-Anime-main-logo.png" alt="Slash-Anime-main-logo.png">
+                </figure>
+                </section>
                 <section class="ads">Ads</section>
             </div>
                  <!-- Top -Lower Header Part with Search box  Ends---->
@@ -110,10 +115,10 @@
             <div class="navigate">
                 <nav>
                     <ul>
-                        <li style="width: 1%; padding: 0rem; height: 110px;background-color: red;"><a href="Head.html"></a></li>
-                        <li><a id="myBtn" href="#">HOME</a></li>
-                        <li><a href="#">REVIEWS</a></li>
-                        <li><a href="#">XBOX</a></li>
+                        <li id="li-red" style="width: 1vw; padding: 0rem; height: 80px; background-color: #fd0000;" ></li>
+                        <li><a id="myBtn" href="Head.html">HOME</a></li>
+                        <li><a href="#">MANGA</a></li>
+                        <li><a href="#">MOVIES</a></li>
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropbtn">SERIES</a>
                             <div class="dropdown-content">
@@ -121,10 +126,23 @@
                               <a href="#">Link 2</a>
                               <a href="#">Link 3</a></li>
                         <li><a href="#">CONTACT</a></li>
-                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">REVIEWS</a></li>
                         <li><a href="#">ABOUT</a></li>
+                        <button class="openbtn" onclick="openNav()">☰ </button>  
                     </ul>
                 </nav>   
+            </div>
+
+             <!--Collapsed Navigation Responsive Bar-->
+             <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="#">HOME</a>
+              <a href="#">MANGA</a>
+              <a href="#">MOVIES</a>
+              <a href="#">SERIES</a>
+              <a href="#">CONTACT</a>
+              <a href="#">REVIES</a>
+              <a href="#">ABOUT</a>
             </div>
 
                <!-- Navigation Bar Ends---->
@@ -135,15 +153,15 @@
                   <div class="group-slider">
                     <section class="variable slider">
                         <div>
-                          <a href="demo.html">
-                            <img style="width:350px; height: 500px;" src="/images/kimetsu no yaiba.jpg"></a>
+                          <a href="Carousel.html">
+                           <figure><img style="width:350px; height: 500px;" src="/images/kimetsu no yaiba.jpg" alt="kimetsu no yaiba poster"></a></figure> 
                         </div>
                         <div>
-                          <a href="demo.html"><img  style="width:350px; height: 500px;" class="slider"  src="/images/Attack-on-Titan-Season-4-Poster.jpg">
+                          <a href="demo.html"><img  style="width:350px; height: 500px;" class="slider"  src="/images/Attack-on-Titan-Season-4-Poster.jpg" alt="shingeki no kyojin final season">
                           </a> </div>
                         <div>
                           <a href="demo.html">
-                          <img style="width:350px; height: 500px;"  class="slider"  src="/images/naruto-tv-series.jpg">
+                          <img style="width:350px; height: 500px;"  class="slider"  src="/images/naruto-tv-series.jpg" alt="naruto tv-series poster">
                         </a></div>
                         <div>
                           <img style="width:350px; height: 500px;" class="slider"  src="/images/Full Metal Alchemist.jpg">
@@ -158,13 +176,30 @@
                       </div>
                       <!-- Carousel/Slider Parts Ends -->
                       </section>
-                             <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat magni ullam est illo atque! Voluptatem sunt ea modi mollitia explicabo praesentium nesciunt voluptatum ipsa, blanditiis beatae quis obcaecati hic quae a laboriosam consequatur eum velit dolorem rem. Facere distinctio rem expedita accusamus consectetur exercitationem perspiciatis aliquid mollitia voluptate magnam doloribus, laudantium esse eos quo nobis cumque sequi deleniti totam optio amet eius blanditiis. Accusantium, eligendi? Fugit in consequuntur esse illo veniam neque numquam, ex voluptate. Sint reiciendis, mollitia adipisci alias enim optio placeat assumenda tempore delectus neque! Mollitia voluptas laborum quaerat optio facere veniam molestiae odio nam, iste distinctio!
-                    </p>
-                </main> 
+                             <p style="font-size: 2rem; color:#fff;">
+                              Animation in Japan began in the early 20th century, when filmmakers started to experiment with techniques pioneered in France, Germany, the United States, and Russia.[10] A claim for the earliest Japanese animation is Katsudō Shashin (c. 1907),[15] a private work by an unknown creator.[16] In 1917, the first professional and publicly displayed works began to appear; animators such as Ōten Shimokawa, Seitarō Kitayama, and Jun'ichi Kōuchi (considered the "fathers of anime") produced numerous films, the oldest surviving of which is Kōuchi's Namakura Gatana.[17] Many early works were lost with the destruction of Shimokawa's warehouse in the 1923 Great Kantō earthquake.[18]
+
+                              By the mid-1930s animation was well-established in Japan as an alternative format to the live-action industry. It suffered competition from foreign producers, such as Disney, and many animators, including Noburō Ōfuji and Yasuji Murata, continued to work with cheaper cutout animation rather than cel animation.[19] Other creators, including Kenzō Masaoka and Mitsuyo Seo, nevertheless made great strides in technique, benefiting from the patronage of the government, which employed animators to produce educational shorts and propaganda.[20] In 1940, the government dissolved several artists' organizations to form the Shin Nippon Mangaka Kyōkai.[a][21] The first talkie anime was Chikara to Onna no Yo no Naka (1933), a short film produced by Masaoka.[22][23] The first feature-length anime film was Momotaro: Sacred Sailors (1945), produced by Seo with a sponsorship from the Imperial Japanese Navy.[24] The 1950s saw a proliferation of short, animated advertisements created for television.[25]                    </p>
+              
+              <img  src="https://64.media.tumblr.com/00b735d48acab86a7d530c8a64834584/tumblr_nw2j25EYFf1r1zvalo1_540.gifv" alt="">
+              </main> 
+
+
+         <!-- Footer part starts -->
+         <footer>
+         <p class="copyright"> ©SlashAnime 2021. All Rights Reserved. Powered by SlashAnime & Hangko.co <span style="color:rgb(255, 0, 0)"class="red"><a style="color:rgb(255, 0, 0)" href="">Watch & Read Manga Anime Free </a></span></p>
+         <p class="copyright">For more information,Suggestion & queries call<span class="red"><a style="color:rgb(255, 0, 0)"href="tel:+977-9811075414">+977-9811075414</a></span> </p>
     
-  <!-- import js libraries,framework & slick -->
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+       </footer>
+         <!-- Footer part Ends--->
+         <!-- import js libraries,framework & slick -->
+         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+         <script src="script/index.js" type="text/javascript"></script>
+         <script src="/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+         <script src="/script/Slick-jquery.js" type="text/javascript" s></script>
+
+      <!-- import js libraries,framework & slick -->
+     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <!-- <script src="script/index.js" type="text/javascript"></script> -->
   <script src="/slick/slick.js" type="text/javascript" charset="utf-8"></script>
    <!-- import js libraries,framework & slick -->
@@ -230,6 +265,17 @@
     $('.top-query').hover(function(){
             $('.top-query').css("width", '7vw'),2000
         })
+
+        //For collapsed nav bar
+        function openNav() {
+                  document.getElementById("mySidebar").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidebar").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
       </script>
     </body>
     </html>

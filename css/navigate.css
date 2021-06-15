@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
 div.navigate
 nav ul {
-  position: fixed;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,14 +17,15 @@ nav ul {
   background-color: black;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  margin-bottom: 10rem;
 }
 
 li {
   list-style-type: none;
   -webkit-transform: skewX(170deg);
           transform: skewX(170deg);
-  font-size: 1.4rem;
-  padding: 1.3em;
+  font-size: 1.2rem;
+  padding: 1em;
   margin-right: 0.2rem;
   background-color: rgba(216, 216, 216, 0.164);
   letter-spacing: 1px;
@@ -78,5 +77,88 @@ li a:hover, .dropdown:hover .dropbtn {
 p {
   font-size: 5rem;
   color: red;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  div.navigate
+nav ul li {
+    padding: 0.8rem;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #999696;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: Dosis,'sans-serif';
+}
+
+.sidebar a:hover {
+  color: #ff0000;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #ff0808;
+}
+
+button.openbtn {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  button.openbtn {
+    visibility: visible;
+    /*display: block;
+  float: right; */
+  }
+  nav ul li {
+    display: none;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=navigate.css.map */

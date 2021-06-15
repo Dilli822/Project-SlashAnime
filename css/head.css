@@ -19,6 +19,8 @@ div.top-most-header {
   border: 1px solid black;
   background-color: #000;
   color: #fff;
+  -webkit-box-shadow: 1px 1px #444444b2;
+          box-shadow: 1px 1px #444444b2;
 }
 
 div.top-most-header button.btn-donate {
@@ -79,16 +81,25 @@ div.lower-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
+  font-family: Dosis;
 }
 
 p {
-  font-size: 5rem;
-  color: red;
+  font-size: 1rem;
+  color: #ff0000;
+}
+
+p.copyright {
+  font-family: Dosis;
+  text-align: center;
+  font-size: .75rem;
+  color: #fff;
 }
 /*# sourceMappingURL=head.css.map */
