@@ -35,7 +35,7 @@ $primary-button-color: #91fc05c0;
  li {
   list-style-type: none;
   transform: skewX(170deg);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 1em;
   margin-right: 0.2rem;
   background-color: rgba(216, 216, 216, 0.164);
@@ -50,7 +50,7 @@ $primary-button-color: #91fc05c0;
   text-decoration: none;
   color:$primary-background-color;
  color:$secondary-color;
- border-bottom: 2px solid transparent;
+ border-bottom: 5px solid transparent;
  transition: border-bottom 0.3s;
  }
 

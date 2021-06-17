@@ -21,6 +21,7 @@ div.top-most-header {
   color: #fff;
   -webkit-box-shadow: 1px 1px #444444b2;
           box-shadow: 1px 1px #444444b2;
+  padding: 0rem 1.5rem;
 }
 
 div.top-most-header button.btn-donate {
@@ -89,6 +90,7 @@ div.lower-head {
           align-items: center;
   border: 1px solid black;
   font-family: Dosis;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -101,5 +103,6 @@ p.copyright {
   text-align: center;
   font-size: .75rem;
   color: #fff;
+  opacity: .8;
 }
 /*# sourceMappingURL=head.css.map */

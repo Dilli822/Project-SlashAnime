@@ -62,8 +62,7 @@
         background-color: $primary-background-color;
         color: $secondary-color;
         box-shadow: 1px 1px #444444b2;
-     
-
+        padding: 0rem 1.5rem;
         button.btn-donate{
             font: 1rem 'Dosis', sans-serif;;
             margin: 0.5rem 1rem .5rem 0rem;
@@ -113,6 +112,7 @@
    div.lower-head{ 
      @include flexCenter();
      font-family: $primary-font-family;
+     margin-bottom: 1.5rem;
       }
     p{
         font-size: 1rem;
@@ -123,6 +123,7 @@
         text-align: center;
         font-size: .75rem;
         color:$secondary-color;
+        opacity: .8;
     }
 
       

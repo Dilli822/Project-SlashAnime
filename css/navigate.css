@@ -24,7 +24,7 @@ li {
   list-style-type: none;
   -webkit-transform: skewX(170deg);
           transform: skewX(170deg);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 1em;
   margin-right: 0.2rem;
   background-color: rgba(216, 216, 216, 0.164);
@@ -35,7 +35,7 @@ a {
   text-decoration: none;
   color: #000;
   color: #fff;
-  border-bottom: 2px solid transparent;
+  border-bottom: 5px solid transparent;
   -webkit-transition: border-bottom 0.3s;
   transition: border-bottom 0.3s;
 }
