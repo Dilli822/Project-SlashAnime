@@ -1,0 +1,192 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none!important;
+    text-decoration: none;
+    background: #000;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+//For smooth scroll behavoiur
+html{
+  scroll-behavior: smooth;
+}
+
+button{
+  border: 0px solid;
+  cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+div.container{
+    display: flex;
+    max-width: 100%;
+    border:3px solid rgb(2, 255, 192);
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+}
+div.left{
+    // background-image: url("/gifs/Itachi_using_Amaterasu.gif"); 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    background-attachment: fixed;
+    width: 50%;
+    background-color: rgb(142, 185, 248);
+    
+}
+
+div.right{
+    // background-image: url("/gifs/Itachi_using_Amaterasu.gif");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    background-attachment: fixed;
+    width: 50%;
+    background-color: rgb(119, 169, 245);
+    
+}
+
+@media only screen and (max-width: 900px) {
+   div.container{
+    justify-content: center;
+
+   }
+    div.left,
+    div.right,
+    div.single{
+        display: none;
+    }
+
+    
+}
+
+section.figure{
+    border: 1px solid blue;
+    height: 400px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/anime posters/7\ deadly\ sins.jpg");
+}
+
+section.figure1,
+section.figure2,
+section.figure3,
+section.figure4,
+section.figure5,
+section.figure6,
+section.figure7,
+section.figure8,
+section.figure9,
+section.figure10,
+section.figure11,
+section.figure12,
+section.figure13,
+section.figure14,
+section.figure15{
+    border: px solid blue;
+    box-shadow: 3px 3px 5px 6px rgb(48, 190, 233);;
+    height: 400px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+section.figure1{ background-image: url("/anime posters/The_Promised_Neverland\,_Volume_1.jpg"); }
+
+section.figure2{ background-image: url("/anime posters/jujustu\ kaisen.jpg"); }
+
+section.figure3{ background-image: url("/anime posters/black-clover.jpg"); }
+
+section.figure4{ background-image: url("/anime posters/boruto\ naruto\ next\ generations.jpg"); }
+
+section.figure5{ background-image: url("/anime posters/castlevania.jpg"); }
+
+section.figure6{ background-image: url("/anime posters/steins\ gate.jpg"); }
+
+section.figure7{ background-image: url("/anime posters/mob\ pyscho.jpg"); }
+
+section.figure8{ background-image: url("/anime posters/7\ deadly\ sins.jpg"); }
+
+section.figure9{ background-image: url("/anime posters/Kingdom-3.jpg"); }
+
+section.figure10{ background-image: url("/anime posters/Bleachanime.png"); }
+
+section.figure11{ background-image: url("/anime posters/dargon\ ball.png"); }
+
+section.figure12{ background-image: url("/anime posters/death\ note.jpg"); }
+
+section.figure13{ background-image: url("/anime posters/fairy\ tail.png"); }
+
+section.figure14{ background-image: url("/anime posters/hunter\ x\ hunter.png"); }
+
+section.figure15{ background-image: url("/anime posters/kimi\ no\ wa.jpg"); }
+
+
+@media only screen and (max-width: 1440px) and(min-width: 900px) {
+    section.figure,
+    section.brief{
+        width: 200px;
+    }
+}
+ section.brief{
+    height: 400px;
+    width: 300px;
+    border: px solid red;
+    padding: .85rem;
+    color: #fff;
+    box-shadow: 3px 3px 5px 6px rgb(48, 190, 233);;
+
+
+   ul li{ 
+       display: inline-block;
+       transform: skewX(170deg);
+   }
+   ul li a{
+       color: #fff;
+       padding: 0.2rem;
+   }
+ 
+    button.read-more{
+        padding: .5rem;
+        margin: 0.7rem .1rem;  
+        border: 0px solid;
+        background-color: #000000;
+        outline: none;
+        border-radius: 1em;
+        color:#ff0000;
+        font-family: Dosis, 'sans-serif';
+        border: 2px solid #ff0000;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+    }
+    button.read-more:hover{
+        transition-delay:  100ms;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+        border: 2px solid #Fff;
+    }
+}
+
+
+div.single{
+    width: 450px;
+    border: 1px solid red;
+    color: #fff;
+section.inner-single{
+    border: 1px solid white;
+    width: 250px;
+    height: 150px;
+}
+
+
+}
+// }
+
