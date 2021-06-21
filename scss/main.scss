@@ -22,26 +22,27 @@ button{
 img{
     max-width: 100%;
 }
-div.container{
+div.hero-container{
     display: flex;
     max-width: 100%;
-    border:3px solid rgb(2, 255, 192);
+    border:px solid rgb(2, 255, 192);
     /* flex-wrap: wrap;
     flex-direction: row; */
+    margin-top: 10rem;
 }
-div.left{
-    // background-image: url("/gifs/Itachi_using_Amaterasu.gif"); 
+div.hero-left{
+    background-image: url("/images/naruto\ and\ sasuke.jpg"); 
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;  
     background-attachment: fixed;
     width: 50%;
-    background-color: rgb(142, 185, 248);
-    
+    background-color: rgb(142, 185, 248);  
 }
 
+
 div.right{
-    // background-image: url("/gifs/Itachi_using_Amaterasu.gif");
+    background-image: url("/images/742702.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;  
@@ -52,7 +53,7 @@ div.right{
 }
 
 @media only screen and (max-width: 900px) {
-   div.container{
+   div.hero-container{
     justify-content: center;
 
    }
@@ -65,15 +66,7 @@ div.right{
     
 }
 
-section.figure{
-    border: 1px solid blue;
-    height: 400px;
-    width: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/anime posters/7\ deadly\ sins.jpg");
-}
+
 
 section.figure1,
 section.figure2,
@@ -90,8 +83,8 @@ section.figure12,
 section.figure13,
 section.figure14,
 section.figure15{
-    border: px solid blue;
-    box-shadow: 3px 3px 5px 6px rgb(48, 190, 233);;
+    border: 1px solid blue;
+    // box-shadow: 3px 3px 5px 6px rgb(48, 190, 233);;
     height: 400px;
     width: 300px;
     background-position: center;
@@ -129,6 +122,10 @@ section.figure14{ background-image: url("/anime posters/hunter\ x\ hunter.png");
 
 section.figure15{ background-image: url("/anime posters/kimi\ no\ wa.jpg"); }
 
+p.description{
+    font-size: 1rem;
+    color:#fff;
+}
 
 @media only screen and (max-width: 1440px) and(min-width: 900px) {
     section.figure,
@@ -138,21 +135,21 @@ section.figure15{ background-image: url("/anime posters/kimi\ no\ wa.jpg"); }
 }
  section.brief{
     height: 400px;
-    width: 300px;
-    border: px solid red;
+    width: 350px;
+    border: 1px solid red;
     padding: .85rem;
     color: #fff;
-    box-shadow: 3px 3px 5px 6px rgb(48, 190, 233);;
+    // box-shadow: 3px 3px 5px 6px rgb(48, 190, 233);
 
-
-   ul li{ 
+    ul li{ 
        display: inline-block;
        transform: skewX(170deg);
-   }
+       font-size: .85rem;
    ul li a{
-       color: #fff;
-       padding: 0.2rem;
+       color: rgb(24, 23, 23);
+       padding: .1rem;
    }
+}
  
     button.read-more{
         padding: .5rem;
@@ -177,10 +174,10 @@ section.figure15{ background-image: url("/anime posters/kimi\ no\ wa.jpg"); }
 
 
 div.single{
-    width: 450px;
+    width: 350px;
     border: 1px solid red;
     color: #fff;
-section.inner-single{
+ section.inner-single{
     border: 1px solid white;
     width: 250px;
     height: 150px;
